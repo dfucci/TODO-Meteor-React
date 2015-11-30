@@ -27,8 +27,8 @@ Task=React.createClass({
 
         <input type="checkbox" readOnly={true} checked = {this.props.task.checked} onClick={this.toggleChecked} />
         {this.props.showPrivateButton ? (
-          <button className="toggle-private" onCick={this.togglePrivate}>
-            {this.props.task.private ? "Private": "Public"}
+          <button className="toggle-private" onClick={this.togglePrivate}>
+            {this.props.task.private ? "Private" : "Public"}
           </button>) : ""
         }
         <span className="text">
